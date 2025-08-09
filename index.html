@@ -54,7 +54,7 @@ button {
 </head>
 <body>
 <div class="app">
-  <h1 class="title">🍹 Magic Drink Adviser</h1>
+  <h1 class="title">🍹 Ваш Личный Бармен</h1>
   <p class="sub">Не знаешь, что пить? Нажми кнопку — и судьба решит!</p>
 
   <div class="card" id="drinkCard">
@@ -279,7 +279,7 @@ function pickDrink() {
 
 async function shareDrink() {
   if (!lastDrink) return;
-  const text = `Сегодня я пью: ${lastDrink.name}\n\n@magic_drink_adviser_bot`;
+  const text = `Сегодня я пью: ${lastDrink.name}\n\n@drink_adviser_bot`;
   try {
     if (tg && tg.platform) {
       const encodedText = encodeURIComponent(text);
@@ -313,3 +313,4 @@ openChannelBtn.addEventListener("click", openChannel);
 </script>
 </body>
 </html>
+
